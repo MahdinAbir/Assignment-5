@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<script src="https://kit.fontawesome.com/baa1e77f2d.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-slate-200 px-5 py-5 "  >
+    
+
+
+<div class="navbar bg-base-100 shadow-sm rounded-xl  ">
+    <div class="flex-1 text-xl px-4 ">
+
+        
+
+        <div class="flex gap-4">
+          <img src="assets/logo.png" alt=""> 
+
+          <div class="mt-2 text-4xl " > Dev<span class="font-bold" >Board</span>  </div>
+        </div>
+
+
+       
+    </div>
+    <div class="flex-none">
+      <ul class="menu menu-horizontal px-1 gap-3">
+
+        <i class="fa-solid fa-square-check text-blue-800 text-xl mt-3 "></i>
+
+        
+        <li id="completed-n" class="text-4xl font-bold " >
+
+
+            23
+            
+            
+          
+        </li>
+
+
+        <li><a class="p-2 bg-slate-200 rounded-full " ><img src="assets/theme-btn.png" alt=""></a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="grid grid-cols-4 gap-4 p-4">
+    
+    <section class="col-span-3 bg-white p-4 rounded-lg shadow grid grid-cols-4 gap-4 ">
+
+        <div class="bg-slate-200 p-5 text-base rounded-lg flex items-center gap-3">
+
+           
+            <i class="fa-solid fa-square-check text-blue-800 text-xl"></i>
+            <br>
+            
+            
+            <div>
+                <h5 class="text-lg font-medium">Task Assigned</h5>
+                <p id="assigned-n" class="text-3xl font-bold">6</p>
+            </div>
+        </div>
+        
+        
+        <div class=" rounded-lg p-5 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] col-span-2  flex gap-3 font-bold text-xl text-white "> <img src="assets/board.png" alt="">
+             Discover Something New Today!</div>
+        <div class="bg-slate-200 text-xl p-5 rounded-lg ">Wednesday 
+            <span class="font-semibold" >July 28 2025</span>
+        </div>
+        
+
+
+
+
+
+
+    </section>
+
+  
+    
+    <div class="col-span-1 row-span-3 bg-white p-4 rounded-lg  text-xl shadow"> 
+
+        <div class="mx-auto items-center text-center gap-2 " >
+            <p class="flex items-center gap-2 justify-center my-3  " >
+                <img src="assets/activity.png" alt=""> 
+                
+                <span>Activity Log</span>
+
+            </p>
+
+            <p>
+                <button id="btnClear" class="btn btn-lg bg-blue-600 text-white btn-clear  " >Clear History</button>
+
+                
+            </p>
+
+            <div id="main-Conatiner" class="my-4"  >
+
+                
+
+
+
+            </div>
+
+
+
+
+        </div>
+         
+    
+    </div>
+    
+  
+    <!-- main part -->
+    <div class="col-span-3 grid grid-cols-3 gap-4 bg-white ">
+
+
+        
+
+
+
+
+
+
+
+      <div class="bg-slate-200 m-3 p-4 py-6  rounded-lg shadow">
+        <span class="p-3 bg-white rounded-lg  " >ShopEase</span>
+        <br>
+        <br>
+        
+
+
+        <h1 class="text-xl font-medium" >Fix Mobile Button Issue</h1>
+        <br>
+
+
+        <p class="p-4 bg-white rounded-lg " > Debug using Chrome Devtools, Check for overlapping.. </p>
+        <br>
+        <div class="flex gap-12"  >
+            <h3>Deadline <br>
+                21 March 2015                  
+            </h3>
+            <button class="p-2 bg-blue-600 btn-lg font-medium text-white rounded-lg btn-main btn btn-soft " >Completed</button>
+
+        </div>
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      <div class="bg-slate-200 m-3 p-4 py-6 rounded-lg shadow"><span class="p-3 bg-white rounded-lg  " >Soft Pay</span>
+        <br>
+        <br>
+        
+
+
+        <h1 class="text-xl font-medium" >Add Pay Success Modal</h1>
+        <br>
+
+
+        <p class="p-4 bg-white rounded-lg " > Store the user's preference in localStorage, update CSS variables  </p>
+        <br>
+        <div class="flex gap-12"  >
+            <h3>Deadline <br>
+                21 March 2015                  
+            </h3>
+            <button class="p-3 bg-blue-600 font-medium text-white rounded-lg btn-main btn btn-soft btn-lg " >Completed</button>
+
+        </div></div>
+
+
+
+
+
+
+<!-- Part- 3 -->
+
+      <div class="bg-slate-200 m-3 p-4 py-6 rounded-lg shadow"><span class="p-3 bg-white rounded-lg  " >Meta</span>
+        <br>
+        <br>
+        
+
+
+        <h1 class="text-xl font-medium" >Add New Reaction</h1>
+        <br>
+
+
+        <p class="p-4 bg-white rounded-lg " > Debug using Chrome Devtools, Check for overlapping.. </p>
+        <br>
+        <div class="flex gap-12"  >
+            <h3>Deadline <br>
+                31 March 2015                  
+            </h3>
+            <button class="p-3 bg-blue-600 font-medium text-white rounded-lg btn-main btn btn-soft btn-lg " >Completed</button>
+
+        </div></div>
+
+
+
+
+
+
+      <div class="bg-slate-200 m-3 p-4 py-6 rounded-lg shadow"><span class="p-3 bg-white rounded-lg  " >Programming Hero</span>
+        <br>
+        <br>
+        
+
+
+        <h1 class="text-xl font-medium" >Fix Video Loading Issue</h1>
+        <br>
+
+
+        <p class="p-4 bg-white rounded-lg " > Debug using Chrome Devtools, Check for overlapping.. </p>
+        <br>
+        <div class="flex gap-12"  >
+            <h3>Deadline <br>
+                21 March 2015                  
+            </h3>
+            <button class="p-3 bg-blue-600 font-medium text-white rounded-lg btn-main btn btn-soft btn-lg " >Completed</button>
+
+        </div></div>
+
+
+
+
+
+      <div class="bg-slate-200 m-3 p-4 py-6 rounded-lg shadow"><span class="p-3 bg-white rounded-lg  " >Google LLC</span>
+        <br>
+        <br>
+        
+
+
+        <h1 class="text-xl font-medium" >Integrate AI Search </h1>
+        <br>
+
+
+        <p class="p-4 bg-white rounded-lg " > Debug using Chrome Devtools, Check for overlapping.. </p>
+        <br>
+        <div class="flex gap-12"  >
+            <h3>Deadline <br>
+                21 March 2015                  
+            </h3>
+            <button class="p-3 bg-blue-600 font-medium text-white rounded-lg btn-main btn btn-soft btn-lg " >Completed</button>
+
+        </div></div>
+
+
+
+
+
+
+
+
+      <div class="bg-slate-200 m-3 p-4 py-6 rounded-lg shadow"><span class="p-3 bg-white rounded-lg  " >Polygon Tech </span>
+        <br>
+        <br>
+        
+
+
+        <h1 class="text-xl font-medium" >Review Ami Probashi Site </h1>
+        <br>
+
+
+        <p class="p-4 bg-white rounded-lg " > Debug using Chrome Devtools, Check for overlapping.. </p>
+        <br>
+        <div class="flex gap-12"  >
+            <h3>Deadline <br>
+                21 March 2015                  
+            </h3>
+            <button class="p-3 bg-blue-600 font-medium text-white rounded-lg btn-main btn btn-soft btn-lg " >Completed</button>
+
+        </div></div>
+    </div>
+  </div>
+
+  
+  
+  
+  
+  
+  
+
+
+  
+  
+  
+
+
+
+
+
+ 
+
+
+<script src="/jsfile/script.js"></script>
+    
+</body>
+</html>
