@@ -85,7 +85,11 @@ document.getElementById("btnClear").addEventListener("click", function(){
 } )
 
 
+document.getElementById("color-btn").addEventListener("click", function(){
 
+    
+
+} )
 
 
 
