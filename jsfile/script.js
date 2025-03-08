@@ -40,7 +40,7 @@ btn.addEventListener("click", function(){
 let para = document.createElement("p")
 para.innerHTML = `
 
-<h1 class="bg-slate-400 text-white rounded-lg my-4" > You Have Completed The task ${message}
+<h1 class="bg-slate-400 text-white rounded-lg my-4"  > You Have Completed The task ${message}
 
 `
 console.log(para)
@@ -61,6 +61,15 @@ mainConatiner.appendChild(para);
 
     // console.log(increaseValue)
     // console.log(decreaseValue)
+    if (
+        decreaseValue === 0
+    )
+    {
+        alert("Congrats!! You Have Completed All The Current Task")
+    }
+    console.log(decreaseValue)
+
+
     
 
 
@@ -74,6 +83,11 @@ document.getElementById("btnClear").addEventListener("click", function(){
 
     document.getElementById("main-Conatiner").classList.add("hidden")
 } )
+
+
+
+
+
 
 
 
