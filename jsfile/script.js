@@ -8,6 +8,10 @@ let decreaseValue = parseInt(Value)
 
 
 
+
+
+
+
 function changeNumber (){
 
     increaseValue++
@@ -35,12 +39,18 @@ btn.addEventListener("click", function(){
     console.log(message)
 
     let mainConatiner = document.getElementById("main-Conatiner");
-    
+
+
+
+
+
+
+    let Time = new Date().toLocaleTimeString(); 
 
 let para = document.createElement("p")
 para.innerHTML = `
 
-<h1 class="bg-slate-400 text-white rounded-lg my-4"  > You Have Completed The task ${message}
+<h1 class="bg-slate-400 text-white rounded-lg my-4"  > You Have Completed The task ${message} at ${Time}
 
 `
 console.log(para)
@@ -59,8 +69,7 @@ mainConatiner.appendChild(para);
 
     
 
-    // console.log(increaseValue)
-    // console.log(decreaseValue)
+    
     if (
         decreaseValue === 0
     )
@@ -81,15 +90,21 @@ mainConatiner.appendChild(para);
 
 document.getElementById("btnClear").addEventListener("click", function(){
 
-    document.getElementById("main-Conatiner").classList.add("hidden")
+    document.getElementById("main-Conatiner").innerHTML = " ";
 } )
 
 
 document.getElementById("color-btn").addEventListener("click", function(){
 
-    
+
 
 } )
+
+
+document.getElementById("date").textContent = new Date().toDateString();
+
+
+
 
 
 
