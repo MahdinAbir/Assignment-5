@@ -96,10 +96,10 @@ document.getElementById("btnClear").addEventListener("click", function(){
 
 
 function getRandomColor() {
-    let r = Math.floor(Math.random() * 256); // Random number between 0-255
+    let r = Math.floor(Math.random() * 256); 
     let g = Math.floor(Math.random() * 256);
     let b = Math.floor(Math.random() * 256);
-    return `rgb(${r}, ${g}, ${b})`; // Return RGB format
+    return `rgb(${r}, ${g}, ${b})`; 
 }
 
 

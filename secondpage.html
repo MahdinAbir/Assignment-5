@@ -69,7 +69,18 @@
         <br>
 
 <p>
-    Answer
+    There are many ways to select an element in the DOM. Generally getElementsById() is one of the most commonly used to target an ID and select it. There are also other ways to select an element in the DOM . For example : <br>
+1.getElementbyClassName()
+<br>
+
+2. getElementsbyTagname()
+<br>
+
+3.querySelector()
+<br>
+
+4.querySelectorAll()...
+
 
 </p>
 
@@ -83,7 +94,15 @@
         <br>
 
 <p>
-    Answer
+    These three terms are different and they are used in different condtions. For example, <br>
+
+    innerHtml - it selects all the data inside a tag, including other html tags, text content, and everything inside that DOM.
+    <br>
+    
+    innerText- it only selects the text content inside a particular tag or DOM.
+    <br>
+    
+    textContent- it is almost similar to innerText but it can also select hidden contents inside the particular tag.
 
 </p>
 
@@ -96,7 +115,7 @@
         <br>
 
 <p>
-    Answer
+    Event delegation is actually using addeventlistener on a parent node so that we can dynamically use eventlistener on the children node. If we use event delegation we can easily handle the situation when there are many child element and we have to use eventlistener on each of them. Delegation simply makes this work simple.
 
 </p>
 
@@ -109,7 +128,7 @@
         <br>
 
 <p>
-    Answer
+    Event Bubbling is such a event when we specifically target any element of html, the function automatically gets to the root of the targetted element, then it starts to go reverse to each of the elements parent node and so on until it reaches to main document or main parent tag of the html file.
 
 </p>
 
@@ -123,7 +142,26 @@
         <br>
 
 <p>
-    Answer
+    To Create:   <br>
+
+document.createElement()  <br>
+
+To Add:  <br>
+
+first we make a new variable conatining proper tag or elements which is the child element then we append the child to its targetted parent node <br>
+EXAMPLE: parent.appendChild.child <br>
+
+we can also add like: document.body.classlist.add() <br>
+
+To Remove: <br>
+
+simply just using removeChild. <br>
+
+document.body.removechild() <br>
+
+we can  remove classlist like this <br>
+
+document.body.classlist.remove() 
 
 </p>
 
